@@ -3,32 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Toby Cafe Mojokerto | Kopi Susu &amp; Roti Bakar di Pacet</title>
-  <meta name="description" content="Toby Cafe Mojokerto: kopi susu dan roti bakar bertema gunung. Lihat menu, cerita Toby, dan petunjuk arah. Situs demo, bukan usaha nyata.">
+  <title>Ngopi di Atas Awan | Toby Cafe Mojokerto</title>
+  <meta name="description" content="Toby Cafe Mojokerto: kopi susu dan roti bakar hangat di ketinggian Pacet. Lihat menu, cerita Toby, dan petunjuk arah. Situs demo, bukan usaha nyata.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#EEF0EA">
+  <meta name="theme-color" content="#1f3d2b">
   <link rel="canonical" href="https://lantir96.github.io/toby-cafe-site/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Toby Cafe">
-  <meta property="og:title" content="Toby Cafe Mojokerto | Kopi Susu &amp; Roti Bakar di Pacet">
-  <meta property="og:description" content="Kopi susu dan roti bakar di atas awan. Situs contoh (demo), bukan usaha nyata.">
+  <meta property="og:title" content="Ngopi di Atas Awan | Toby Cafe Mojokerto">
+  <meta property="og:description" content="Ngopi di atas awan. Situs contoh (demo), bukan usaha nyata.">
   <meta property="og:url" content="https://lantir96.github.io/toby-cafe-site/">
   <meta property="og:image" content="https://lantir96.github.io/toby-cafe-site/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Toby Cafe Mojokerto | Kopi Susu &amp; Roti Bakar di Pacet">
-  <meta name="twitter:description" content="Kopi susu dan roti bakar di atas awan. Situs contoh (demo), bukan usaha nyata.">
+  <meta name="twitter:title" content="Ngopi di Atas Awan | Toby Cafe Mojokerto">
+  <meta name="twitter:description" content="Ngopi di atas awan. Situs contoh (demo), bukan usaha nyata.">
   <meta name="twitter:image" content="https://lantir96.github.io/toby-cafe-site/assets/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Young+Serif&display=swap">
   <link rel="preload" as="image" href="assets/hero-phone.webp" media="(max-width: 767px)" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/hero-desktop.webp" media="(min-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-desktop-900.webp" media="(min-width: 768px)" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
   <script src="main.js" defer></script>
   <script type="application/ld+json">
   {
@@ -42,9 +45,9 @@
     "areaServed": "Mojokerto",
     "image": "https://lantir96.github.io/toby-cafe-site/assets/og-image.jpg",
     "hasMenu": "https://lantir96.github.io/toby-cafe-site/#menu",
-    "telephone": "Perlu konfirmasi",
+    "telephone": "+62-812-0000-0000",
     "openingHours": "Mo-Su 06:00-20:00",
-    "address": { "@type": "PostalAddress", "addressLocality": "Mojokerto", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+    "address": { "@type": "PostalAddress", "addressLocality": "Pacet, Kabupaten Mojokerto", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
   }
   </script>
   <script type="application/ld+json">
@@ -52,18 +55,28 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Jam berapa Toby Cafe buka?", "acceptedAnswer": { "@type": "Answer", "text": "Jam buka Toby Cafe belum dikonfirmasi. Jam 06.00–20.00 di situs ini hanya contoh demo. Kalau nanti sudah pasti, datang pagi untuk melihat kabut dari teras." } },
-      { "@type": "Question", "name": "Di mana lokasi Toby Cafe?", "acceptedAnswer": { "@type": "Answer", "text": "Toby Cafe di area Mojokerto (demo). Alamat lengkap dan titik peta belum dikonfirmasi." } },
-      { "@type": "Question", "name": "Apa menu andalan Toby Cafe?", "acceptedAnswer": { "@type": "Answer", "text": "Kopi susu, panas atau dingin, dan roti bakar. Daftar lengkap dan harga contohnya ada di bagian Menu." } },
-      { "@type": "Question", "name": "Ada minuman selain kopi?", "acceptedAnswer": { "@type": "Answer", "text": "Ada teh tarik jahe, cokelat panas, dan wedang jahe (menu demo)." } },
-      { "@type": "Question", "name": "Bisa datang ramai-ramai bareng teman pendaki?", "acceptedAnswer": { "@type": "Answer", "text": "Belum dikonfirmasi. Untuk rombongan, sebaiknya tanya dulu lewat WhatsApp setelah nomornya tersedia." } }
+      { "@type": "Question", "name": "Jam berapa Toby Cafe buka?", "acceptedAnswer": { "@type": "Answer", "text": "Toby Cafe buka setiap hari pukul 06.00-20.00. Datang pagi untuk melihat kabut dari teras." } },
+      { "@type": "Question", "name": "Di mana lokasi Toby Cafe?", "acceptedAnswer": { "@type": "Answer", "text": "Toby Cafe ada di Pacet, Kabupaten Mojokerto, Jawa Timur." } },
+      { "@type": "Question", "name": "Apa menu andalan Toby Cafe?", "acceptedAnswer": { "@type": "Answer", "text": "Kopi susu, panas atau dingin, dan roti bakar. Daftar lengkap dan harganya ada di bagian Menu." } },
+      { "@type": "Question", "name": "Ada minuman selain kopi?", "acceptedAnswer": { "@type": "Answer", "text": "Ada teh tarik jahe, cokelat panas, dan wedang jahe." } },
+      { "@type": "Question", "name": "Bisa datang ramai-ramai bareng teman pendaki?", "acceptedAnswer": { "@type": "Answer", "text": "Bisa. Untuk rombongan, sebaiknya kabari dulu lewat WhatsApp supaya tempat duduknya siap." } }
     ]
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#menu">Langsung ke menu</a>
+  <div class="progress" aria-hidden="true"></div>
   <p class="notice">Situs contoh (demo) buatan Lintar. Toby Cafe bukan usaha nyata.</p>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-cup" viewBox="0 0 48 48"><path d="M10 20h24v8a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10v-8Z"/><path d="M34 22h3a4 4 0 0 1 0 8h-3M18 6c-2 3 2 4 0 8M25 6c-2 3 2 4 0 8"/></symbol>
+    <symbol id="i-bread" viewBox="0 0 48 48"><path d="M10 18a8 8 0 0 1 8-8h12a8 8 0 0 1 8 8c0 2-1 3-2 4v14a3 3 0 0 1-3 3H15a3 3 0 0 1-3-3V22c-1-1-2-2-2-4Z"/><path d="M19 24l6 6M25 22l6 6"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 48 48"><path d="M4 38 18 14l8 13 5-7 13 18H4Z"/><path d="M15 21l3 4 3-3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 48 48"><path d="M8 36h32M14 36a10 10 0 0 1 20 0M24 10v6M10 18l4 4M38 18l-4 4M4 28h5M39 28h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5.200-7 11-7 11s-7-5.800-7-11a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.400"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </svg>
 
   <header class="site-header" id="site-header">
     <a class="brand" href="#beranda" aria-label="Toby Cafe, ke beranda">Toby Cafe</a>
@@ -73,137 +86,116 @@
       <a href="#cerita">Cerita</a>
       <a href="#faq">FAQ</a>
       <a href="#lokasi">Lokasi</a>
-      <a class="btn btn-primary nav-cta" href="https://www.google.com/maps/search/?api=1&amp;query=Pacet%2C+Mojokerto" target="_blank" rel="noopener">Petunjuk arah</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="beranda">
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
       <picture class="hero-media">
-        <source media="(max-width: 767px)" srcset="assets/hero-phone.webp" width="1440" height="2560">
-        <img src="assets/hero-desktop.webp" width="1752" height="900" alt="Ilustrasi Toby Cafe Mojokerto: segelas kopi susu dingin di pagar teras kayu, di atas lautan awan saat matahari terbit." fetchpriority="high">
+        <source media="(max-width: 767px)" srcset="assets/hero-phone.webp" width="720" height="1080">
+        <source srcset="assets/hero-desktop-900.webp 900w, assets/hero-desktop.webp 1600w" sizes="100vw">
+        <img src="assets/hero-desktop.webp" width="1600" height="900" alt="Kolase daun hijau dan cokelat dengan bunga kering di atas kertas bertekstur, ilustrasi sementara." fetchpriority="high">
       </picture>
       <div class="hero-text">
-        <h1 class="hero-in" style="--d:0ms">Toby Cafe Mojokerto</h1>
-        <p class="hero-lead hero-in" style="--d:80ms">Kopi susu dan roti bakar hangat di ketinggian Pacet. Naik pelan-pelan, ngopi di atas awan.</p>
-        <p class="hero-actions hero-in" style="--d:160ms">
-          <a class="btn btn-primary" href="#menu">Lihat menu</a>
-          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Pacet%2C+Mojokerto" target="_blank" rel="noopener">Petunjuk arah</a>
-        </p>
-        <p class="hero-info hero-in" style="--d:240ms">Buka setiap hari 06.00–20.00 · Pacet, Kab. Mojokerto <span class="tag">(demo, perlu konfirmasi)</span></p>
+        <h1 class="split-lines">Ngopi di<br>atas awan.</h1>
+        <p class="hero-lead hero-in">Kopi susu dan roti bakar hangat di ketinggian Pacet, Mojokerto.</p>
+        <p class="hero-in"><a class="btn btn-pill magnet" href="#menu">Lihat menu</a></p>
       </div>
     </section>
 
-    <section class="section menu" id="menu">
-      <div class="menu-intro reveal">
-        <h2>Menu Toby Cafe</h2>
-        <p>Kopi susu dan roti bakar, dibuat satu per satu setelah dipesan.</p>
-        <div class="menu-photo" id="menu-photo">
-          <img src="assets/menu-kopi-susu.webp" width="1200" height="1500" loading="lazy" alt="Ilustrasi: kopi susu dingin dan panas di meja kayu." data-for="panel-kopi">
-          <img src="assets/menu-roti-bakar.webp" width="1200" height="1500" loading="lazy" alt="Ilustrasi: roti bakar cokelat keju dipotong memanjang di piring enamel." data-for="panel-roti">
-          <img src="assets/menu-teman-ngopi.webp" width="1200" height="1500" loading="lazy" alt="Ilustrasi: wedang jahe dan cokelat panas yang masih beruap." data-for="panel-teman">
-        </div>
-      </div>
-      <div class="menu-body reveal">
-        <div class="menu-tabs" role="tablist" aria-label="Kategori menu">
-          <button class="menu-tab" role="tab" type="button" id="tab-kopi" aria-controls="panel-kopi" aria-selected="true">Kopi Susu</button>
-          <button class="menu-tab" role="tab" type="button" id="tab-roti" aria-controls="panel-roti" aria-selected="false" tabindex="-1">Roti Bakar</button>
-          <button class="menu-tab" role="tab" type="button" id="tab-teman" aria-controls="panel-teman" aria-selected="false" tabindex="-1">Teman Ngopi</button>
-        </div>
+    <section class="panel-wrap" aria-label="Yang bisa Anda nikmati">
+      <ul class="panel">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-cup"/></svg><h2>Kopi Susu</h2><p>Panas atau dingin, dengan gula aren dan sirup pandan.</p></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-bread"/></svg><h2>Roti Bakar</h2><p>Tebal dan renyah, dari cokelat keju sampai srikaya.</p></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-mountain"/></svg><h2>Teras Gunung</h2><p>Duduk di ketinggian Pacet, kabut lewat di bawah kaki.</p></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-sun"/></svg><h2>Buka Pagi</h2><p>Setiap hari mulai 06.00, pas untuk sehabis turun jalur.</p></li>
+      </ul>
+    </section>
 
-        <div class="menu-panel" role="tabpanel" id="panel-kopi" aria-labelledby="tab-kopi">
-          <h3>Kopi Susu</h3>
-          <ul class="menu-list">
-            <li><div><strong>Kopi Susu Toby</strong><span>espresso, susu segar, gula aren.</span></div><span class="price">Rp 18.000</span></li>
-            <li><div><strong>Kopi Susu Aren Dingin</strong><span>manis gula aren, banyak es.</span></div><span class="price">Rp 20.000</span></li>
-            <li><div><strong>Kopi Susu Pandan</strong><span>dengan sirup pandan buatan sendiri.</span></div><span class="price">Rp 22.000</span></li>
-            <li><div><strong>Kopi Susu Puncak</strong><span>double shot, buat yang baru turun jalur.</span></div><span class="price">Rp 24.000</span></li>
-            <li><div><strong>Kopi Tubruk</strong><span>hitam, panas, ampasnya tenggelam pelan-pelan.</span></div><span class="price">Rp 12.000</span></li>
-          </ul>
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <p class="eyebrow">Menu</p>
+      <h2 id="menu-title" class="section-title">Pilihan favorit di Toby Cafe</h2>
+      <ul class="tiles">
+        <li class="tile tile-cream"><img src="assets/item-kopi-susu-toby.webp" width="600" height="600" loading="lazy" alt="Kopi Susu Toby, ilustrasi sementara"><div><h3>Kopi Susu Toby</h3><p>Espresso, susu segar, gula aren.</p><span class="price">Rp 18.000</span></div></li>
+        <li class="tile tile-brown"><img src="assets/item-kopi-susu-aren.webp" width="600" height="600" loading="lazy" alt="Kopi Susu Aren Dingin, ilustrasi sementara"><div><h3>Kopi Susu Aren</h3><p>Manis gula aren, banyak es.</p><span class="price">Rp 20.000</span></div></li>
+        <li class="tile tile-sage"><img src="assets/item-kopi-susu-pandan.webp" width="600" height="600" loading="lazy" alt="Kopi Susu Pandan, ilustrasi sementara"><div><h3>Kopi Susu Pandan</h3><p>Dengan sirup pandan buatan sendiri.</p><span class="price">Rp 22.000</span></div></li>
+        <li class="tile tile-brown"><img src="assets/item-roti-bakar-cokelat-keju.webp" width="600" height="600" loading="lazy" alt="Roti Bakar Cokelat Keju, ilustrasi sementara"><div><h3>Roti Bakar Cokelat Keju</h3><p>Cokelat meleleh, keju parut.</p><span class="price">Rp 18.000</span></div></li>
+        <li class="tile tile-cream"><img src="assets/item-roti-bakar-srikaya.webp" width="600" height="600" loading="lazy" alt="Roti Bakar Srikaya, ilustrasi sementara"><div><h3>Roti Bakar Srikaya</h3><p>Selai srikaya hangat.</p><span class="price">Rp 16.000</span></div></li>
+        <li class="tile tile-brown"><img src="assets/item-teh-tarik-jahe.webp" width="600" height="600" loading="lazy" alt="Teh Tarik Jahe, ilustrasi sementara"><div><h3>Teh Tarik Jahe</h3><p>Berbuih, dengan irisan jahe.</p><span class="price">Rp 14.000</span></div></li>
+      </ul>
+
+      <details class="full-menu">
+        <summary>Lihat menu lengkap</summary>
+        <div class="full-grid">
+          <div>
+            <h3>Kopi Susu</h3>
+            <ul class="menu-list">
+              <li><span>Kopi Susu Toby</span><span class="price">Rp 18.000</span></li>
+              <li><span>Kopi Susu Aren Dingin</span><span class="price">Rp 20.000</span></li>
+              <li><span>Kopi Susu Pandan</span><span class="price">Rp 22.000</span></li>
+              <li><span>Kopi Susu Puncak</span><span class="price">Rp 24.000</span></li>
+              <li><span>Kopi Tubruk</span><span class="price">Rp 12.000</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Roti Bakar</h3>
+            <ul class="menu-list">
+              <li><span>Roti Bakar Cokelat Keju</span><span class="price">Rp 18.000</span></li>
+              <li><span>Roti Bakar Srikaya</span><span class="price">Rp 16.000</span></li>
+              <li><span>Roti Bakar Susu Mentega</span><span class="price">Rp 15.000</span></li>
+              <li><span>Roti Bakar Pisang Cokelat</span><span class="price">Rp 20.000</span></li>
+              <li><span>Roti Bakar Kornet Telur</span><span class="price">Rp 22.000</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Teman Ngopi</h3>
+            <ul class="menu-list">
+              <li><span>Teh Tarik Jahe</span><span class="price">Rp 14.000</span></li>
+              <li><span>Cokelat Panas</span><span class="price">Rp 18.000</span></li>
+              <li><span>Wedang Jahe</span><span class="price">Rp 10.000</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="menu-panel" role="tabpanel" id="panel-roti" aria-labelledby="tab-roti">
-          <h3>Roti Bakar</h3>
-          <ul class="menu-list">
-            <li><div><strong>Roti Bakar Cokelat Keju</strong></div><span class="price">Rp 18.000</span></li>
-            <li><div><strong>Roti Bakar Srikaya</strong></div><span class="price">Rp 16.000</span></li>
-            <li><div><strong>Roti Bakar Susu Mentega</strong></div><span class="price">Rp 15.000</span></li>
-            <li><div><strong>Roti Bakar Pisang Cokelat</strong></div><span class="price">Rp 20.000</span></li>
-            <li><div><strong>Roti Bakar Kornet Telur</strong></div><span class="price">Rp 22.000</span></li>
-          </ul>
-        </div>
-        <div class="menu-panel" role="tabpanel" id="panel-teman" aria-labelledby="tab-teman">
-          <h3>Teman Ngopi</h3>
-          <ul class="menu-list">
-            <li><div><strong>Teh Tarik Jahe</strong></div><span class="price">Rp 14.000</span></li>
-            <li><div><strong>Cokelat Panas</strong></div><span class="price">Rp 18.000</span></li>
-            <li><div><strong>Wedang Jahe</strong></div><span class="price">Rp 10.000</span></li>
-          </ul>
-        </div>
-        <p class="note">Harga contoh untuk demo, perlu konfirmasi. Belum termasuk pajak (perlu konfirmasi).</p>
+      </details>
+    </section>
+
+    <section class="story" id="cerita" aria-labelledby="cerita-title">
+      <div class="story-card">
+        <p class="eyebrow">Cerita</p>
+        <h2 id="cerita-title" class="section-title">Cerita Toby</h2>
+        <p class="statement">Di puncak, yang paling dicari selalu sama: segelas kopi susu hangat dan roti bakar yang masih renyah.</p>
+        <p>Toby suka naik gunung. Setelah sekian banyak jalur, ia tahu momen terbaik datang saat istirahat: duduk, minum yang hangat, dan melihat kabut lewat di bawah kaki.</p>
+        <p>Toby Cafe dibuat untuk momen itu. Tidak perlu jadi pendaki untuk mampir; cukup datang pagi dan pesan yang hangat.</p>
       </div>
     </section>
 
-    <section class="story" id="cerita">
-      <img class="story-photo reveal" src="assets/story-gear.webp" width="1536" height="1024" loading="lazy" alt="Ilustrasi: sepatu gunung, cangkir enamel, dan teko kecil di atas batu berlumut dalam kabut pagi.">
-      <div class="story-text">
-        <h2 class="reveal">Cerita Toby</h2>
-        <p class="statement reveal">Di puncak, yang paling dicari selalu sama: segelas kopi susu hangat dan roti bakar yang masih renyah.</p>
-        <p class="reveal">Toby suka naik gunung. Setelah sekian banyak jalur, ia tahu momen terbaik justru datang saat istirahat: duduk, minum yang hangat, dan melihat kabut lewat di bawah kaki.</p>
-        <p class="reveal">Toby Cafe dibuat untuk momen itu. Tidak perlu jadi pendaki untuk mampir; cukup datang pagi dan pesan yang hangat. (Cerita contoh untuk demo.)</p>
-        <p class="reveal"><a class="link-dark" href="#menu">Lihat menu</a></p>
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title" class="section-title">Pertanyaan tentang Toby Cafe</h2>
+      <div class="faq-list">
+        <details open><summary>Jam berapa Toby Cafe buka?</summary><p>Toby Cafe buka setiap hari pukul 06.00-20.00. Datang pagi untuk melihat kabut dari teras.</p></details>
+        <details><summary>Di mana lokasi Toby Cafe?</summary><p>Toby Cafe ada di Pacet, Kabupaten Mojokerto, Jawa Timur.</p></details>
+        <details><summary>Apa menu andalan Toby Cafe?</summary><p>Kopi susu, panas atau dingin, dan roti bakar. Daftar lengkap dan harganya ada di bagian <a href="#menu">Menu</a>.</p></details>
+        <details><summary>Ada minuman selain kopi?</summary><p>Ada teh tarik jahe, cokelat panas, dan wedang jahe.</p></details>
+        <details><summary>Bisa datang ramai-ramai bareng teman pendaki?</summary><p>Bisa. Untuk rombongan, sebaiknya kabari dulu lewat WhatsApp supaya tempat duduknya siap.</p></details>
       </div>
-    </section>
-
-    <figure class="view reveal">
-      <picture>
-        <source media="(max-width: 767px)" srcset="assets/view-terrace-phone.webp" width="1080" height="1350">
-        <img src="assets/view-terrace.webp" width="2400" height="1028" loading="lazy" alt="Ilustrasi: teras kayu Toby Cafe di pagi hari dengan kabut di bawahnya.">
-      </picture>
-      <figcaption>Teras pagi hari. Foto ilustrasi sementara (TEMPORARY).</figcaption>
-    </figure>
-
-    <section class="section faq" id="faq">
-      <h2 class="reveal">Pertanyaan tentang Toby Cafe</h2>
-      <div class="faq-list reveal">
-        <details open><summary>Jam berapa Toby Cafe buka?</summary><p>Jam buka Toby Cafe belum dikonfirmasi. Jam 06.00–20.00 di situs ini hanya contoh demo. Kalau nanti sudah pasti, datang pagi untuk melihat kabut dari teras.</p></details>
-        <details><summary>Di mana lokasi Toby Cafe?</summary><p>Toby Cafe di area Mojokerto (demo). Alamat lengkap dan titik peta belum dikonfirmasi.</p></details>
-        <details><summary>Apa menu andalan Toby Cafe?</summary><p>Kopi susu, panas atau dingin, dan roti bakar. Daftar lengkap dan harga contohnya ada di bagian <a href="#menu">Menu</a>.</p></details>
-        <details><summary>Ada minuman selain kopi?</summary><p>Ada teh tarik jahe, cokelat panas, dan wedang jahe (menu demo).</p></details>
-        <details><summary>Bisa datang ramai-ramai bareng teman pendaki?</summary><p>Belum dikonfirmasi. Untuk rombongan, sebaiknya tanya dulu lewat WhatsApp setelah nomornya tersedia.</p></details>
-      </div>
-      <img class="faq-photo reveal" src="assets/faq-detail.webp" width="1200" height="1600" loading="lazy" alt="">
-    </section>
-
-    <section class="section lokasi" id="lokasi">
-      <div class="lokasi-body reveal">
-        <h2>Lokasi Toby Cafe di Mojokerto</h2>
-        <dl class="info">
-          <div><dt>Alamat</dt><dd>Alamat lengkap: perlu konfirmasi. Area: Pacet, Kab. Mojokerto <span class="tag">(demo, perlu konfirmasi)</span></dd></div>
-          <div><dt>Jam buka</dt><dd>Setiap hari 06.00–20.00 <span class="tag">(demo, perlu konfirmasi)</span></dd></div>
-          <div><dt>WhatsApp</dt><dd>Perlu konfirmasi</dd></div>
-          <div><dt>Instagram</dt><dd>Perlu konfirmasi</dd></div>
-        </dl>
-        <p class="hero-actions">
-          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Pacet%2C+Mojokerto" target="_blank" rel="noopener">Petunjuk arah</a>
-          <a class="btn btn-outline" href="https://wa.me/?text=Halo%20Toby%20Cafe%20(demo)" target="_blank" rel="noopener">Chat WhatsApp</a>
-        </p>
-        <p class="note">Tombol WhatsApp membuka WhatsApp tanpa nomor tujuan; nomor Toby Cafe belum ada dan perlu konfirmasi. Peta mencari area Pacet, Mojokerto, bukan titik pasti.</p>
-      </div>
-      <img class="lokasi-photo reveal" src="assets/lokasi-jalur.webp" width="1536" height="1152" loading="lazy" alt="Ilustrasi: jalan sempit menanjak di antara pohon pinus dalam kabut.">
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p class="footer-mark" aria-hidden="true">Toby Cafe</p>
-    <div class="footer-cols">
-      <p>Pacet, Kab. Mojokerto <span class="tag">(demo, perlu konfirmasi)</span><br>Alamat lengkap: perlu konfirmasi</p>
-      <p>Setiap hari 06.00–20.00 <span class="tag">(demo, perlu konfirmasi)</span></p>
-      <nav aria-label="Tautan footer">
-        <a href="#menu">Menu</a> <a href="#cerita">Cerita</a> <a href="#faq">FAQ</a> <a href="#lokasi">Lokasi</a>
-      </nav>
-      <p><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Pacet%2C+Mojokerto" target="_blank" rel="noopener">Petunjuk arah</a></p>
+  <footer class="site-footer" id="lokasi">
+    <div class="footer-panel">
+      <h2>Lokasi Toby Cafe di Mojokerto</h2>
+      <ul class="footer-info">
+        <li><svg class="ico-s" aria-hidden="true"><use href="#i-pin"/></svg><span>Pacet, Kabupaten Mojokerto, Jawa Timur</span></li>
+        <li><svg class="ico-s" aria-hidden="true"><use href="#i-clock"/></svg><span>Buka setiap hari 06.00-20.00</span></li>
+      </ul>
+      <p class="footer-actions">
+        <a class="btn btn-pill magnet" href="https://www.google.com/maps/search/?api=1&amp;query=Pacet%2C+Mojokerto" target="_blank" rel="noopener">Petunjuk arah</a>
+        <a class="btn btn-ghost magnet" href="https://wa.me/?text=Halo%20Toby%20Cafe" target="_blank" rel="noopener">Chat WhatsApp</a>
+      </p>
+      <nav class="footer-nav" aria-label="Tautan footer"><a href="#menu">Menu</a> <a href="#cerita">Cerita</a> <a href="#faq">FAQ</a> <a href="#beranda">Ke atas</a></nav>
     </div>
-    <p class="legal">© 2026 Toby Cafe (demo). Situs contoh buatan Lintar, bukan usaha nyata. Semua foto adalah ilustrasi sementara (TEMPORARY) sampai ada foto asli.</p>
+    <p class="legal">&copy; 2026 Toby Cafe (demo). Situs contoh buatan Lintar, bukan usaha nyata. Semua foto adalah ilustrasi sementara.</p>
   </footer>
 </body>
 </html>
